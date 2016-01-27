@@ -16,7 +16,7 @@ module.exports = {
                     "required": true
                 },
                 "email": {
-                    "example": "alin@gmail.com",
+                    "example": "alain",
                     "required": true
                 },
                 "inami": {

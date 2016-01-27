@@ -7,30 +7,23 @@ module.exports = {
                 respond: {}
             },
             fn: function(inputs, exits) {
-                // Pick random item
-                sails.machines['c646f5e7-9c6f-49a5-91f6-7e1eabfd1186_5.2.0'].sample({
-                    "array": ["is destined to change lives", "is the wave of the future", "has world-changing potential", "loves to party", "never quits", "just can&rsquo;t stop", "doesn&rsquo;t know the meaning of &ldquo;failure&rdquo;", "smells like rich mahagony", "can bench press twice its body weight—IN GOLD", "slays dragons"]
+                // Send to all
+                sails.machines['9e74ee33-0e44-4494-bbd3-addd4b36573f_1.2.1'].blast({
+                    "eventName": "message",
+                    "data": "hello peapel"
+                }).setEnvironment({
+                    sails: sails
                 }).exec({
-                    "error": function(pickRandomItem) {
+                    "error": function(sendToAll) {
                         return exits.error({
-                            data: pickRandomItem,
+                            data: sendToAll,
                             status: 500
                         });
 
                     },
-                    "emptyArray": function(pickRandomItem) {
+                    "success": function(sendToAll) {
                         return exits.respond({
-                            action: "respond_with_status",
-                            status: 200
-                        });
-
-                    },
-                    "success": function(pickRandomItem) {
-                        return exits.respond({
-                            data: {
-                                appName: "Infidome",
-                                description: pickRandomItem
-                            },
+                            data: null,
                             action: "display_view",
                             status: 200,
                             view: "homepage"

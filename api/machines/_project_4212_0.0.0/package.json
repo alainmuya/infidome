@@ -1,16 +1,21 @@
 {
   "dependencies": {},
   "machinepack": {
-    "machines": ["create_nurse", "create_patient", "destroy_nurse", "destroy_patient", "findOne_nurse", "findOne_patient", "find_nurse", "find_patient", "update_nurse", "update_patient"],
+    "machines": ["create_mypatient", "create_nurse", "create_patient", "destroy_mypatient", "destroy_nurse", "destroy_patient", "findOne_mypatient", "findOne_nurse", "findOne_patient", "find_mypatient", "find_nurse", "find_patient", "update_mypatient", "update_nurse", "update_patient"],
     "machineVersions": {
+      "create_mypatient": "0.0.2",
       "create_nurse": "0.0.7",
       "create_patient": "0.0.8",
+      "destroy_mypatient": "0.0.2",
       "destroy_nurse": "0.0.7",
       "destroy_patient": "0.0.8",
+      "findOne_mypatient": "0.0.2",
       "findOne_nurse": "0.0.7",
       "findOne_patient": "0.0.8",
+      "find_mypatient": "0.0.2",
       "find_nurse": "0.0.7",
       "find_patient": "0.0.8",
+      "update_mypatient": "0.0.2",
       "update_nurse": "0.0.7",
       "update_patient": "0.0.8"
     }

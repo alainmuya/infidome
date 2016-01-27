@@ -1,0 +1,1 @@
+{"attributes":{"id_patient":{"type":"integer","unique":false,"required":true},"id_nurse":{"type":"integer","unique":false,"required":true}},"globalId":"Mypatient","identity":"mypatient"}

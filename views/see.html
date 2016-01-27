@@ -3,7 +3,7 @@
   <div id="header-wrapper" >
   <div id="header" class="container" >
     <div id="logo">
-       <h1><a href="#"><img src="http://flysyse.com/infidom/fonts/logoinfidome.svg" width="100px;" height="50px;"></a></h1>
+   		 <h1><a href="#"><img src="http://flysyse.com/infidom/fonts/logoinfidome.svg" width="100px;" height="50px;"></a></h1>
     </div>
     <div id="menu"   ng-controller="shownurseController" >
       <ul>
@@ -19,51 +19,51 @@
 </div>
 
 <div id="wrapper"  >
-  <div id="featured-wrapper">
-    <div id="featured" class="extra2 margin-btm container">
-      <div class="main-title">        
-      </div>  
-      <div class="ebox1"> <!--span class="fa fa-pagelines"></span-->
-        <div class="title">
-          <h1>Infirmier</h1>
-          <br/>        
-        <p> Liste les patients enregistré sur infidome </p>
-          <span class="byline"></span> </div>       
-          <a href="#" class="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Ajouter</a> <br/> <br/><br/> <br/>
-          <p> Cette tache nessesite l'aprobation de l'administrateur, uafin d'éviter tout fraude un code d'authentification vous sera demandé. 
-          pour plus d'info vous pouvez contacter l'administrateur en charge <a href="#" >alainfly3@gmail.com </a></p>         
-      </div>
-      <div class="ebox2" ng-controller="shownurseController" style="overflow-y: scroll;"> 
-        <!--span class="fa fa-anchor"></span-->
-        <div class="title" >  
+	<div id="featured-wrapper">
+		<div id="featured" class="extra2 margin-btm container">
+			<div class="main-title">				
+			</div>	
+			<div class="ebox1"> <!--span class="fa fa-pagelines"></span-->
+				<div class="title">
+					<h1>Infirmier</h1>
+					<br/>				 
+				<p> Liste les patients enregistré sur infidome </p>
+					<span class="byline"></span> </div>				
+				  <a href="#" class="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Ajouter</a> <br/> <br/><br/> <br/>
+				 	<p> Cette tache nessesite l'aprobation de l'administrateur, uafin d'éviter tout fraude un code d'authentification vous sera demandé. 
+					pour plus d'info vous pouvez contacter l'administrateur en charge <a href="#" >alainfly3@gmail.com </a></p>					
+			</div>
+			<div class="ebox2" ng-controller="shownurseController" style="overflow-y: scroll;"> 
+				<!--span class="fa fa-anchor"></span-->
+				<div class="title" >	
 
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th style="text-align:left;">Nom</th>
-                <th style="text-align:left;">Prenom</th>
-                <th style="text-align:left;">Email</th>
-                <th style="text-align:left;">Inami</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr ng-repeat="getnurse in nurse" >
-                <td style="text-align:left;">{{getnurse.name}}</td>
-                <td style="text-align:left;">{{getnurse.lastname}}</td>
-                <td style="text-align:left;">{{getnurse.email}}</td>
-                <td style="text-align:left;">{{getnurse.inami}}</td>
-              </tr>           
-            </tbody>
-          </table>
-          <!--h2>Donec dictum metus</h2-->
-          <!--span class="byline">Integer sit amet pede vel arcu aliquet pretium</span--> 
-        </div>
-      </div>
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th style="text-align:left;">Nom</th>
+								<th style="text-align:left;">Prenom</th>
+								<th style="text-align:left;">Email</th>
+								<th style="text-align:left;">Inami</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="getnurse in nurse" >
+								<td style="text-align:left;">{{getnurse.name}}</td>
+								<td style="text-align:left;">{{getnurse.lastname}}</td>
+								<td style="text-align:left;">{{getnurse.email}}</td>
+								<td style="text-align:left;">{{getnurse.inami}}</td>
+							</tr>						
+						</tbody>
+					</table>
+					<!--h2>Donec dictum metus</h2-->
+					<!--span class="byline">Integer sit amet pede vel arcu aliquet pretium</span--> 
+				</div>
+			</div>
 
-    </div>
-  </div>
+		</div>
+	</div>
 
-      <!-- Modal popup -->
+			<!-- Modal popup -->
 <div class="modal fade" id="exampleModal" tabindex="-1"  ng-controller="addnurseController" role="dialog" aria-labelledby="exampleModalLabel" >
   <div class="modal-dialog"  role="document" >
     <div class="modal-content">
@@ -85,15 +85,15 @@
            <div class="form-group">          
             <input type="text" ng-model="lastname" name="lastname" class="inputPatient"  id="recipient-name" placeholder="Prenom" required>
           </div>
-          <div class="form-group">          
+				  <div class="form-group">          
             <input type="email" ng-model="email"  class="inputPatient"   name="email" id="recipient-name" placeholder="email" required> <br/>
             <span style="color:red;">{{errorDuplicateEmail}}</span>
           </div>
-    
-      <div class="form-group">          
+		
+		  <div class="form-group">          
             <input type="text" ng-model="Inami"  class="inputPatient"  name="Inami" id="recipient-name" placeholder="Numero Inami" required>
           </div>
-          
+				  
            
           <div class="form-group">      
             <input type="text" ng-model="telephone"  class="inputPatient"  id="recipient-name" placeholder="Télephone/Gsm" required>
@@ -111,7 +111,7 @@
   </div>
 </div>
 <div id="copyright" class="container">
-  <p>&copy;flysyse 2016. All rights reserved  <a href="http://flysyse.com/">Contact</a> </p>
+	<p>&copy;flysyse 2016. All rights reserved  <a href="http://flysyse.com/">Contact</a> </p>
 </div>
 
 </div>

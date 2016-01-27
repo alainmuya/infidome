@@ -1,12 +1,18 @@
 module.exports.routes = {
-  "post /addnurse": {
-    "target": "AddnurseController.create"
+  "post /check_double_email": {
+    "target": "Check_double_emailController.create"
   },
   "post /login": {
     "target": "LoginController.create"
   },
-  "post /addpatient": {
-    "target": "AddpatientController.create"
+  "post /updatepassword": {
+    "target": "UpdatepasswordController.create"
+  },
+  "post /newuserpassword": {
+    "target": "NewuserpasswordController.post_create"
+  },
+  "get /newuserpassword": {
+    "target": "NewuserpasswordController.get_find"
   },
   "get /loginpage": {
     "target": "LoginpageController.find"
@@ -23,7 +29,13 @@ module.exports.routes = {
   "get /nurse": {
     "target": "NurseController.find"
   },
+  "post /addnurse": {
+    "target": "AddnurseController.create"
+  },
   "get /": {
     "target": "Home$Controller.find"
+  },
+  "post /addpatient": {
+    "target": "AddpatientController.create"
   }
 };

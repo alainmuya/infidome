@@ -551,6 +551,20 @@ ul.contact li a.icon-rss:before
 	top: 1.6em;
 }
 
+#menu2
+{
+	position: absolute;	
+	top: 1.9em;
+	left: 43%;
+	}
+
+	.MenetitlePassword {
+
+		font-weight:200; 
+		color:#fff;
+		font-size:1.8em;
+	}
+
 #menu ul
 {
 	display: inline-block;
@@ -1043,6 +1057,7 @@ ul.contact li a.icon-rss:before
 {
 	width: 560px;
 	height: 400px;
+	
 }
 
 .extra2  .ebox1

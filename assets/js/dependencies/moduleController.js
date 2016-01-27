@@ -6,8 +6,9 @@ app.controller('loginControler', [ '$scope', '$http', function($scope,$http){
 	//$scope.hideBarMenu =true;	
 	//loginForm.loading= false;	  	
 	$scope.loginForm = function(){
-		console.log( $scope.email+''+$scope.password);		
-		$http.post('/login', {email: $scope.email,
+		//console.log( $scope.email+''+$scope.password);
+		sessionStorage.setItem("email", $scope.email)	
+		$http.post('/login', {	 email: $scope.email,
 								 password: $scope.password
 								})
 		.then(function onSuccess(sailsResponse){
